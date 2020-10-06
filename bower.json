@@ -1,0 +1,19 @@
+{
+    "name": "adapt-walkgrove-tabs",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/walkgrovedev/adapt-walkgrove-tabs.git"
+    },
+    "framework": "5",
+    "version": "1.0.0",
+    "homepage": "https://github.com/walkgrovedev/adapt-walkgrove-tabs.git",
+    "component": "tabs",
+    "displayName": "Tabs",
+    "description": "A component ...",
+    "main": "/js/adapt-walkgrove-tabs.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-component"
+    ],
+    "license": "GPL-3.0"
+}
