@@ -1,7 +1,10 @@
 {
   "name": "adapt-walkgrove-tabs",
-  "version": "1.0.0",
-  "framework": ">=5",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/walkgrovedev/adapt-walkgrove-tabs.git"
+  },
+  "framework": "5",
   "homepage": "https://github.com/walkgrovedev/adapt-walkgrove-tabs.git",
   "component": "tabs",
   "displayName": "Tabs",
@@ -12,14 +15,14 @@
     "adapt-component"
   ],
   "license": "GPL-3.0",
-  "_release": "1.0.0",
+  "_release": "3423b571fd",
   "_resolution": {
-    "type": "version",
-    "tag": "v1.0.0",
-    "commit": "ee2952fedacf99c49eb56e093bd77647c8b15b99"
+    "type": "branch",
+    "branch": "master",
+    "commit": "3423b571fdac64725bb1713afe7e6f93e2077773"
   },
   "_source": "git://github.com/walkgrovedev/adapt-walkgrove-tabs.git",
-  "_target": "1.0.0",
+  "_target": "*",
   "_originalSource": "adapt-walkgrove-tabs",
   "_direct": true
 }

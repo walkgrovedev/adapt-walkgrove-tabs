@@ -1,12 +1,27 @@
 <div class="component__inner tabs__inner">
   {{> component this}} 
 
-  {{!-- <div class="tabs__main">
-  {{#each _items}}
+  <div class="tabs__main">
+    {{#each _items}}
+    <div class="tabs__widget" data-index="{{@index}}">
+      <div class="tabs__tab-title js-tab-item">{{{title}}}</div>
+    </div>
+    {{/each}}
+  </div>
 
-  {{/each}}
-  </div> 
-  
-  {{#if body}} {{/if}} --}}
+  <div class="tabs__content">
+    {{#each _items}}
+      <div class="tabs__content-holder {{_classes}}">
+        <div class="tabs__content-body">
+          {{{body}}}
+        </div>
+        {{#if _graphic}}
+          <div class="tabs__content-image" style="background:url({{_graphic.src}}); background-repeat: no-repeat;background-size: cover;background-position: center;" {{#if _graphic.alt}}aria-label="{{_graphic.alt}}"{{else}}aria-hidden="true"{{/if}}>
+            <img src="{{_graphic.src}}" class="tabs__content-image img" style="visibility:hidden;"/>
+          </div> 
+        {{/if}}
+      </div>
+    {{/each}}
+  </div>
 
 </div>
