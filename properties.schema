@@ -29,6 +29,73 @@
       "validators": [],
       "help": "This is the instruction text",
       "translatable": true
+    },
+    "_items": {
+      "type": "array",
+      "required": true,
+      "title": "Tab items",
+      "items": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "title": {
+            "type": "string",
+            "required": true,
+            "default": "",
+            "title": "Tab title",
+            "inputType": "Text",
+            "validators": [],
+            "help": "",
+            "translatable": true
+          },
+          "body": {
+            "type": "string",
+            "required": true,
+            "default": "",
+            "title": "Tab body content",
+            "inputType": "Text",
+            "validators": [],
+            "help": "",
+            "translatable": true
+          },
+          "_classes": {
+            "type": "string",
+            "required": false,
+            "default": "",
+            "title": "Tab classes",
+            "inputType": "Text",
+            "validators": [],
+            "help": "",
+            "translatable": false
+          },
+          "_graphic": {
+            "type": "object",
+            "required": true,
+            "properties": {
+              "src": {
+                "type": "string",
+                "required": true,
+                "default": "",
+                "title": "Tab image",
+                "inputType": "Text",
+                "validators": [],
+                "help": "",
+                "translatable": false
+              },
+              "alt": {
+                "type": "string",
+                "required": true,
+                "default": "",
+                "title": "Tab image ALT",
+                "inputType": "Text",
+                "validators": [],
+                "help": "",
+                "translatable": true
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
