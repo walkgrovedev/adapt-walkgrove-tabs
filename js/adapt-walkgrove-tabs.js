@@ -44,6 +44,16 @@ define([
       const tabIndex = $(event.currentTarget).parent().data('index');
       this.$('.tabs__widget').eq(tabIndex).addClass('is-selected');
       this.$('.tabs__content-holder').eq(tabIndex).addClass('is-visible');
+      //audio?
+      if (Adapt.config.get('_sound')._isActive === true) {
+        this.model.get('_items').forEach((item, i) => {
+          if (i === tabIndex) {
+            if (item._audio) {
+              Adapt.trigger('audio:partial', {src: item._audio._src});
+            }
+          }
+        });
+      }
       // set as visited
       this.setItemVisited(tabIndex);
     },
