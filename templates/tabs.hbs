@@ -16,8 +16,8 @@
           {{{body}}}
         </div>
         {{#if _graphic}}
-          <div class="tabs__content-image" style="background:url({{_graphic.src}}); background-repeat: no-repeat;background-size: cover;background-position: center;" {{#if _graphic.alt}}aria-label="{{_graphic.alt}}"{{else}}aria-hidden="true"{{/if}}>
-            <img src="{{_graphic.src}}" {{#if _graphic.alt}}aria-label="{{_graphic.alt}}"{{else}}aria-hidden="true"{{/if}} class="tabs__content-image img" style="visibility:hidden;"/>
+          <div class="tabs__content-image" style="background:url({{_graphic.src}}); background-repeat: no-repeat;background-size: cover;background-position: center;" {{#if _graphic.alt}}aria-label="{{_graphic.alt}}"{{else}}aria-hidden="true" alt=""{{/if}}>
+            <img src="{{_graphic.src}}" {{#if _graphic.alt}}aria-label="{{_graphic.alt}}"{{else}}aria-hidden="true" alt=""{{/if}} class="tabs__content-image img" style="visibility:hidden;"/>
           </div> 
         {{/if}}
       </div>
