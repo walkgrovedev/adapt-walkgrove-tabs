@@ -36,7 +36,7 @@ define([
       event.preventDefault();
 
       // reset all
-      this.model.get('_items').forEach(function(item, index) {
+      this.model.get('_items').forEach((item, index) => {
         this.$('.tabs__widget').eq(index).removeClass('is-selected');
         this.$('.tabs__content-holder').eq(index).removeClass('is-visible');
       });
